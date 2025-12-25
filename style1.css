@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #92f7ef, #487ab0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Card utama */
+.container {
+    width: 380px;
+    padding: 30px 25px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 18px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.container h2{
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* Box input dan tombol diatur agar rapi & align */
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Input styling */
+.box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255,255,255,0.85);
+    transition: 0.25s;
+}
+
+.box input:focus {
+    transform: scale(1.03);
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.6);
+}
+
+/* Button */
+button {
+    padding: 12px;
+    background: #ffffff;
+    color: #0077ff;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+}
+
+button:hover{
+    background: #e3f1ff;
+    transform: scale(1.03);
+}
+
+/* Hasil output */
+.result{
+    margin-top: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Card hasil */
+.card{
+    background: rgba(255,255,255,0.18);
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 12px;
+    backdrop-filter: blur(10px);
+}
+
+/* List rules */
+.note{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.rules {
+    list-style: none;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.rules li {
+    padding: 7px;
+    margin-top: 6px;
+    background: rgba(255,255,255,0.14);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.rules li:hover{
+    background: rgba(255,255,255,0.25);
+    transform: scale(1.03);
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
