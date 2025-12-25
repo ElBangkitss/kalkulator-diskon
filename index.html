@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Diskon Belanja</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Kalkulator Diskon Belanja</h2>
+
+    <div class="box">
+        <input type="text" id="total" placeholder="Masukkan total belanja (Rp)" oninput="formatInput(this)">
+        <button onclick="hitung()">Hitung Diskon</button>
+        <button onclick="resetForm()" style="background:#ff5e5e; color:white;">Reset</button>
+    </div>
+
+    <div class="result" id="hasil"></div>
+
+    <p class="note">Ketentuan Diskon:</p>
+    <ul class="rules">
+        <li>> 500.000 = 20%</li>
+        <li>> 300.000 = 15%</li>
+        <li>> 100.000 = 10%</li>
+        <li>≤ 100.000 = 0%</li>
+    </ul>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
